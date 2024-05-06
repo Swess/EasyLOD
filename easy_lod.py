@@ -11,7 +11,7 @@ bl_info = {
     "location": "View3D > Sidebar > Easy LOD",
     "warning": "",
     "category": "LOD",
-    "doc_url": "https://github.com/alonrubintec/EasyLOD"
+    "doc_url": "https://github.com/Swess/EasyLOD"
 }
 
 ui_space = 0.35
@@ -216,7 +216,9 @@ class ExportLODs(bpy.types.Operator):
                 copied_object.modifiers.clear()
 
                 decimate_modifier = copied_object.modifiers.new(name=modifier.name, type='DECIMATE')
+                decimate_modifier.decimate_type = modifier.decimate_type
                 decimate_modifier.ratio = modifier.ratio
+                decimate_modifier.angle_limit = modifier.angle_limit
                 copied_object.name = f"{selected_object.name}_{modifier.name}"
 
                 Export_collection.objects.link(copied_object)
