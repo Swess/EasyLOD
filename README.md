@@ -4,12 +4,6 @@ EasyLOD is a powerful Blender addon for game developers, allowing for easy creat
 
 Native support for **Unity** LOD format
 
-
-## Tutorial:
-<a href="https://www.youtube.com/watch?v=fXJ2h0iOFIA&ab_channel=ALONZUBINA" target="_blank">
-<img src="https://raw.githubusercontent.com/alonrubintec/EasyLOD/master/More/thumbnail.png" alt="Watch the series" width="340" height="180" border="10" />
-</a>
-
 ## Requirements
 This add-on requires Blender 3.0.0 or newer.
 ## Installation
@@ -48,4 +42,4 @@ The `Easy LOD` tool contains the following settings:
 3. Click the `Export FBX` button to export the mesh with LODs.
 
 ## Author
-This addon was created by Alon Rubin.
+This addon was created by Alon Rubin. And forked and modified/maintained by Isaac Doré
